@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+}
+
+body div{
+    width: 100%;
+}
+
+/* body svg{
+    width: fit-content;
+} */
+
+#right-wheel, #left-wheel{
+    animation: wheel 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#man-bike{
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+#hat{
+    animation: hat 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#Path_1{
+    animation: bg 2s ease-in-out infinite alternate;
+    transform-origin: top;
+}
+
+#undraw_Ride_a_bicycle_2yok{
+    animation: move 5s infinite alternate;
+}
+
+@keyframes wheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes bike{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(20deg);
+    }
+}
+
+@keyframes hat{
+    from{
+        transform: translateY(-10%) rotateZ(0deg);
+    }
+    to{
+        transform: translateY(5%) rotateZ(20deg);
+    }
+}
+
+@keyframes bg{
+    from{
+        transform: scale(1) scaleX(50);
+    }
+    to{
+        transform: scale(2) scaleX(100);
+    }
+}
+
+@keyframes move{
+    from{
+        transform: translateX(-150%);
+    }
+    to{
+        transform: translateX(180%);
+    }
+}
